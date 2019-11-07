@@ -8,10 +8,15 @@ The purpose of this project is for educational purposes and serves as the Milest
 The live project can be viewed [link](https://www.google.com) here.
 
 ## Technologies Used
-* [Python 3](https://www.python.org/download/releases/3.0/)
+* [Python 3.7](https://www.python.org/download/releases/3.0/)
 * [Flask 1.0.2](http://flask.pocoo.org/)
 * [HTML5](https://en.wikipedia.org/wiki/HTML5)
 * [CCS3](https://www.w3.org/Style/CSS/)
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
 * [MongoDB](https://www.mongodb.com/)
+
+## Testing
+#### Responsivness
+The UX fonts and card feature, plus the navbar and hamurger are all scalable, responsive and easy to navigate throughout the site.
+The site follows responsive design and works for desktop viewing on browsers: google chrome, firefox and explorer as well as mobiles having checked the rending on the iPhone: from 5 to X, Samsung Galaxy: all versions, iPad: all versions, Google: Pixel 2 and 3.
