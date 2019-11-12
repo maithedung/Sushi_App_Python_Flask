@@ -9,7 +9,7 @@ The live project can be viewed [link](https://www.google.com) here.
 
 ## CRUD Functionality
 
-#### CREATE
+### CREATE
 Users and anyone can view a list of recipes a user or users has already created in the database. These recipe lists are displayed on the index page and also the search page (which is called recipes.html) whether a user or non-user ("viewer") is logged in or not.
 
 ### READ 
