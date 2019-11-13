@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }} - MySushiRecipes</title>
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/heroic-features.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link href="static/images/sushi.png" rel="icon" type="image" />
+    <!----copyright accredited to https://www.flaticon.com/authors/smashicons--> 
+     </head>
+<body>
+
+  <style>
+        body {
+            color: orangered;
+            background-size: cover;
+            background-image: url(https://villagevoice.freetls.fastly.net/wp-content/uploads/2017/01/nyv_food_20161216_sugarfish_bhawks_008-1366x911.jpg)
+        }
+
+    </style>
+
+    {% if 'username' in session %}
+        <div class="text-light font-italic bg-dark pt-2 pr-4 text-center">Welcome back, {{ session['username'] }}</div>
+    {% endif %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">MySushiRecipes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('index') }}">Home
+              <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('recipes') }}">Search</a>
+              <span class="sr-only">(current)</span>
+            </li>
+            {% if 'username' not in session %}
+             <li class="nav-item">
+                        <a class="nav-link {% block nav_login %}{% endblock %}" href="{{ url_for('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% block nav_register %}{% endblock %}" href="{{ url_for('register') }}">Register</a>
+                    </li>
+              {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link {% block nav_create_recipe %}{% endblock %}" href="{{ url_for('create_recipe') }}">Add Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% block nav_logout %}{% endblock %}" href="{{ url_for('logout') }}">Logout</a>
+                    </li>
+                {% endif %}
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+    {% block content %}{% endblock %}
+    </div>
+    
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
