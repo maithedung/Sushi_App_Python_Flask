@@ -5,7 +5,7 @@ This web application has been created using Python 3.7 for the back-end with Fla
 
 The purpose of this project is for educational purposes and serves as the Milestone 4 Project in the Data Centric Development module of the Full Stack Software Development Program at the Code Institute.
 
-The live project can be viewed [link](https://www.google.com) here.
+The live project can be viewed on heroku at [link](https://www.heroku.com) here. The link [link] to this repositary can be viewed here  (https://fion21.github.io/new-flask-1/)
 
 ## CRUD Functionality
 
@@ -15,11 +15,11 @@ Users and anyone can view a list of recipes a user or users has already created 
 ### READ 
 Following on from the above point, therefore all viewers to the site can effectively read the recipes from the database collection respectively. Furthermore, if a user/viewer presses the "more info" button they can view a recipe as a single page with all the details. The idea was provided by the Task Manager project at CI.
 
-The search feature within the `recipes.html` page as a search bar and which is also accessed as a `link` on the `menu bar` on every page,  also allows viewers to search for a term as a filter via a keyword such as a tag to read from the collection and the results of which will be displayed after the search button is depressed.
+The search feature within the `recipes.html` page presents a search bar and which is also accessed as a `link` on the `menu bar` on every page,  it also allows viewers to search for a term as a filter via a keyword such as a tag to read from the collection and the results of which will be displayed after the search button is depressed.
 
 ### UPDATE 
 
-This is only available to registered/logged-in users a hashed password security feature using *bycrypt* and *weurkzug* discussed in Security. A user has to fill in all the fields to be able to add a new recipe.
+This is only available to registered/logged-in users a hashed password security feature using *bycrypt* and discussed in Security. A user has to fill in all the fields to be able to add a new recipe.
 
 I used the code of *update one* in the `app.py` as part of the edit_recipe route as *recipe_db = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})* which is also translated via code in `{{ form.submit() }}`,  on the `edit_recipe.html` originating from `forms.py`. There is no update link on the menu bar, the page appears as an option to view from the `Add Recipe` page. Checking was done by simply logging into MongoDB itself to check the recipe list had been updated, then a browser refresh on the front-end.
 
@@ -28,14 +28,15 @@ I used the code of *update one* in the `app.py` as part of the edit_recipe route
 This is accessed from the `Add Recipe` page as a button option, similar functionality to the `update` button. If a user presses the delete button there is a flash message warning beforehand. The code is handled with `forms.py` Similar logic to that described for *update one*, here it is `recipes_db.delete_one({...etc` in`app.py`. 
 
 ## Technologies Used
-* [Python 3.7](https://www.python.org/download/releases/3.0/)
-* [Flask 1.0.2](http://flask.pocoo.org/)
-* [HTML5](https://en.wikipedia.org/wiki/HTML5)
-* [CCS3](https://www.w3.org/Style/CSS/)
-* [JavaScript](https://www.javascript.com/)
+* [Python 3.7](https://www.python.org/download/releases/3.0/) Language
+* [Flask 1.0.2](http://flask.pocoo.org/) Web framework
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) Webpage markup language
+* [CCS3](https://www.w3.org/Style/CSS/) Styling and layout
+* [Bootstrap](https://www.getbootstrap.com) Front-end component library
+* [JavaScript](https://www.javascript.com/) Used with JQuery
 * [jQuery](https://jquery.com/) Menu bar dropdown
-* [Jinja2](https://palljtsprojects.com/p/jinja/) Jinja2 templating engine for Python used to keep the same features as a template so it is less loading for the browser
-* [MongoDB](https://www.mongodb.com/)
+* [Jinja2](https://palljtsprojects.com/p/jinja/) templating engine for Python 
+* [MongoDB](https://www.mongodb.com/) Database source file
 
 ## Testing
 #### Responsivness
