@@ -19,13 +19,22 @@ The search bar feature within the `recipes.html` allows viewers to search for a 
 
 ### UPDATE 
 
-This is only available to registered/logged-in users a hashed password security feature using *bycrypt* and discussed in Security. A user has to fill in all the fields to be able to add a new recipe.
+This is only available to registered/logged-in users a hashed password security feature using the *bycrypt* feature from Flask. A user has to fill in all the fields to be able to add a new recipe.
 
 I used the code of *update one* in the `app.py` as part of the edit_recipe route as *recipe_db = mongo.db.recipes.find_one_or_404({'_id': ObjectId(recipe_id)})* which is also translated via code in `{{ form.submit() }}`,  on the `edit_recipe.html` originating from `forms.py`. There is no update link on the menu bar, the page appears as an option to view from the `Add Recipe` page. Checking was done by simply logging into MongoDB itself to check the recipe list had been updated, then a browser refresh on the front-end. On successful editing the user is returned to the homepage.
 
 ### DELETE 
 
 This is accessed from the `Add Recipe` page as a button option, similar functionality to the `update` button. If a user presses the delete button there is a flash message warning beforehand. The code is handled with `forms.py` Similar logic to that described for *update one*, here it is `recipes_db.delete_one({...etc` in`app.py`. On successful deletion the user is returned to the homepage.
+
+#### Other Features
+A `logout` feature is available on the navbar and allows the logged in user to logout of their current session, which will create a redirect to the homepage.
+`Views`: Shows in incremental value the number of times a full recipe page is called.
+
+#### Features Left to Implement
+Have a `likes` button on each recipe
+Charting data vizualization of `views` popularity via D3.JS
+Follwers and to 'follow other users' functionality, plus a user avatar to add to the welome username once they have logged in.
 
 ## Technologies Used
 * [Python 3.7](https://www.python.org/download/releases/3.0/) Language
@@ -73,12 +82,12 @@ This should see the app live at https://<whatever you called it>.herokuapp.com/
 ## Credits and Acknowledgements
 **Stack Overflow**, **CI** for coding issues
 
-[**Miguel Grinberg**](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xviii-deployment-on-heroku) Flask Mega Tutorial
+**Miguel Grinberg** Flask Mega Tutorial
 
 **Spencer Bariball** tutor at Code Institute
 
 ## Images
-All images used in this application are copyright of their respective website owners, the links will take viewers to their respective sites, those being [Journey of Japan](https://journey-of-japan.com) and [Seth Lui](https://sethlui.com).
+All images used in this application are copyright of their respective website owners, the links will take viewers to their respective sites, those being [Journey of Japan](https://journey-of-japan.com), [Tenkaichi](https://tenkaichi.com.sg) and [Seth Lui](https://sethlui.com).
 
 ## Disclaimer
 The purpose of the project is for educational purposes only.
