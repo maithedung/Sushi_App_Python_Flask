@@ -15,7 +15,7 @@ Users whether regisistered or not can view a list of recipes already on the data
 ### READ 
 Thus users to the site can read a selection of recipes from the database collection via those displayed mentioned above. Furthermore, if a user presses the "more info" button they can view a recipe as a single page with all the details. The idea was provided by the Task Manager project at CI.
 
-The search bar feature within the `recipes.html` page presents a search bar and which is also accessed as a `link` on the `navbar` on every page,  it also allows viewers to search for a term as a filter via a keyword such as a tag to read from the collection and the results of which will be displayed after the search button is depressed.
+The search bar feature within the `recipes.html` allows viewers to search for a term as a filter via a keyword such as a tag to read from the collection and the results of which will be displayed after the search button is depressed.
 
 ### UPDATE 
 
