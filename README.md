@@ -5,7 +5,7 @@ This web application has been created using Python 3.7 for the back-end with Fla
 
 The purpose of this project is for educational purposes and serves as the Milestone 4 Project in the Data Centric Development module of the Full Stack Software Development Program at the Code Institute.
 
-The live project can be viewed on heroku at [link](https://www.heroku.com) here. The link [link] to this repositary can be viewed here  (https://fion21.github.io/new-flask-1/)
+The live project can be viewed on heroku at [link](https://sushi-sandwich.herokuapp.com) here.
 
 ## CRUD Functionality
 
