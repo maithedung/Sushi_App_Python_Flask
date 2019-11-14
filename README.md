@@ -39,7 +39,7 @@ This is accessed from the `Add Recipe` page as a button option, similar function
 * [MongoDB](https://www.mongodb.com/) Database source file
 
 ## Testing
-#### Responsivness
+#### Responsiveness
 The UX fonts and card feature, plus the navbar and hamurger are all scalable, responsive and easy to navigate throughout the site.
 The site follows responsive design and works for desktop viewing on browsers: google chrome, firefox and explorer as well as mobiles having checked the rending on the iPhone: from 5 to X, Samsung Galaxy: all versions, iPad: all versions, Google: Pixel 2 and 3.
 
