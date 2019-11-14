@@ -10,12 +10,12 @@ The live project can be viewed on heroku at [link](https://sushi-sandwich.heroku
 ## CRUD Functionality
 
 ### CREATE
-Users whether regisistered or not can view a list of recipes a user has already created in the database. These recipe lists are displayed on the index page and also the search bar on *recipes.html*.
+Users whether regisistered or not can view a list of recipes already on the database. These recipe lists are displayed on the index page and some are also on the recipes page and can be searched and retrieved by keywords via the search bar located on *recipes.html*. A user can chose to register, then as a logged in user can add a recipe, update and delete their own recipies added to the database.
 
 ### READ 
-Following on from the above point, therefore all users to the site can effectively read the recipes from the database collection respectively. Furthermore, if a user presses the "more info" button they can view a recipe as a single page with all the details. The idea was provided by the Task Manager project at CI.
+Thus users to the site can read a selection of recipes from the database collection via those displayed mentioned above. Furthermore, if a user presses the "more info" button they can view a recipe as a single page with all the details. The idea was provided by the Task Manager project at CI.
 
-The search feature within the `recipes.html` page presents a search bar and which is also accessed as a `link` on the `navbar` on every page,  it also allows viewers to search for a term as a filter via a keyword such as a tag to read from the collection and the results of which will be displayed after the search button is depressed.
+The search bar feature within the `recipes.html` page presents a search bar and which is also accessed as a `link` on the `navbar` on every page,  it also allows viewers to search for a term as a filter via a keyword such as a tag to read from the collection and the results of which will be displayed after the search button is depressed.
 
 ### UPDATE 
 
@@ -49,6 +49,7 @@ The HTML, CSS and Python code for this application has been checked via W3C Mark
 ## Deployment
 Installing the project can be done via the following stages:
 ````
+Download this repository via the green download button on the head of this page
 Login to Heroku.com presumming you have pre-registered
 On the Heroku dashboard click on Create New App
 Enter a unique name and your region (nearest), click Create
@@ -62,7 +63,9 @@ git commit -m "initial commit"
 git push -u heroku master
 heroku ps:scale web=1
 Set debug to False in production/live within the main file (eg app.py)
-In your heroku app set the config vars to IP : 0.0.0.0, PORT : 5000 and MONGO_URI :mongodb://[yourusername]:[youpassword]@the string that your got from mongodb.com:something/<whatever the collection name is>.
+In your heroku app set the config vars to IP : 0.0.0.0, 
+PORT : 5000 and MONGO_URI :mongodb://[yourusername]:[youpassword]
+@the string that your got from mongodb.com:something/<whatever the collection name is>.
 Find the More tab> Restart all Dynos
 This should see the app live at https://<whatever you called it>.herokuapp.com/
  ````
