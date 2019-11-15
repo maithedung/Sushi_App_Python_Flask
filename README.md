@@ -41,6 +41,7 @@ Have a `likes` button on each recipe. Charting data vizualization of `views` pop
 * [Bootstrap](https://www.getbootstrap.com) Front-end component library
 * [JavaScript](https://www.javascript.com/) with JQuery and HTML scripts 
 * [jQuery](https://jquery.com/) Navbar dropdown
+* [Flaticon](https://www.flaticon.com/authors/smashicons) URL Sushi tab icon
 * [Jinja2](https://palljtsprojects.com/p/jinja/) templating engine for Python 
 * [MongoDB](https://www.mongodb.com/) Database source file
 
