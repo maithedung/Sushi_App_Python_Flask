@@ -51,7 +51,7 @@ The UX fonts and card feature, plus the navbar and hamurger are all scalable, re
 The site follows responsive design and works for desktop viewing on browsers: google chrome, firefox and explorer as well as mobiles having checked the rending on the iPhone: from 5 to X, Samsung Galaxy: all versions, iPad: all versions, Google: Pixel 2 and 3.
 
 #### Coding Tests
-The HTML, CSS and Python code for this application has been checked via W3C Markup Validation Service, and reported no major errors.
+The HTML, CSS code for this application has been checked via W3C Markup Validation Service, and reported no major errors.
 
 ## Deployment
 Installing the project can be done via the following stages:
@@ -91,5 +91,8 @@ All images used in this application are copyright of their respective website ow
 
 ## Disclaimer
 The purpose of the project is for educational purposes only.
+
+## Licence
+This project is released under the MIT licence. See the link at the top of the page.
 
 
