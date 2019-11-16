@@ -7,6 +7,10 @@ The purpose of this project is for educational purposes and serves as the Milest
 
 The live project can be viewed on heroku at [link](https://sushi-sandwich.herokuapp.com) here.
 
+## Wireframes
+[Desktop](https://github.com/fion21/new-flask-1/blob/master/planning/desktopviewindex.PNG) [Ipad](https://github.com/fion21/new-flask-1/blob/master/planning/tabletverticalviewindex.PNG) [Iphone6](https://github.com/fion21/new-flask-1/blob/master/planning/iphone6.PNG)
+
+
 ## CRUD Functionality
 
 ### CREATE
@@ -39,7 +43,7 @@ Have a `likes` button on each recipe. Charting data vizualization of `views` pop
 * [HTML5](https://en.wikipedia.org/wiki/HTML5) Webpage markup language
 * [CCS3](https://www.w3.org/Style/CSS/) Styling and layout
 * [Bootstrap](https://www.getbootstrap.com) Front-end component library
-* [JavaScript](https://www.javascript.com/) with JQuery and HTML scripts 
+* [JavaScript](https://www.javascript.com/) with jQuery and HTML scripts 
 * [jQuery](https://jquery.com/) Navbar dropdown
 * [Flaticon](https://www.flaticon.com/authors/smashicons) URL Sushi tab icon
 * [Jinja2](https://palljtsprojects.com/p/jinja/) templating engine for Python 
