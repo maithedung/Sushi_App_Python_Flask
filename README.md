@@ -58,7 +58,13 @@ The UX fonts and card feature, plus the navbar and hamburger are all scalable, r
 The site follows responsive design and works for desktop viewing on browsers: google chrome, firefox and explorer as well as mobiles having checked the rending on the iPhone: from 5 to X, Samsung Galaxy: all versions, iPad: all versions, Google: Pixel 2 and 3.
 
 #### Coding Tests
-The HTML, CSS code for this application has been checked via W3C Markup Validation Service, and reported no major errors.
+The HTML, CSS code for this application has been checked via W3C Markup and reported no significant errors. The Python code has been tested via working on the code in stages and running the app on the front-end. Some pep8 coding from VS code helped by providing the correct indentation, but on other times the jinja templating would stay on the same line, which was a hinderence. Back-end terminal testing and running were standard procedures throughout the app development.
+
+#### Testing Template Views
+Routes have been created in flask which bring in a template view on the front-end. Elements of which have been run in the browser and refactored to the final stage for deployment.
+
+#### Database Testing
+The database set up in Mongodb is comprised of a list of recipe elements and also a user with page view increments. The most difficult aspect was getting familiar with the interface and finding the connection string. This took me a lot of time to understand and I eventually worked out how to set the os.environ to Mongodb so that the actual string is not displayed in the github repository. The connection string is put into the config vars on Heroku which is accessable to the owner of the site.
 
 ## Deployment
 Installing the project can be done via the following stages:
@@ -96,7 +102,7 @@ This should see the app live at https://<whatever you called it>.herokuapp.com/
 ## Images
 All images used in this application are copyright of their respective website owners, the links will take viewers to their respective sites, those being [Journey of Japan](https://journey-of-japan.com), [Tenkaichi](https://tenkaichi.com.sg) and [Seth Lui](https://sethlui.com).
 
-## Licence
+## License
 This project is released under the [MIT licence](https://github.com/fion21/new-flask-1/blob/master/LICENSE).
 
 ## Disclaimer
