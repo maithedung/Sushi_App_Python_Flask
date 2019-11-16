@@ -96,10 +96,9 @@ This should see the app live at https://<whatever you called it>.herokuapp.com/
 ## Images
 All images used in this application are copyright of their respective website owners, the links will take viewers to their respective sites, those being [Journey of Japan](https://journey-of-japan.com), [Tenkaichi](https://tenkaichi.com.sg) and [Seth Lui](https://sethlui.com).
 
+## Licence
+This project is released under the [MIT licence](https://github.com/fion21/new-flask-1/blob/master/LICENSE).
+
 ## Disclaimer
 The purpose of the project is for educational purposes only.
-
-## Licence
-This project is released under the MIT licence. See the link at the top of the page.
-
 
