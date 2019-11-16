@@ -1,15 +1,14 @@
 from flask import Flask, render_template, flash, redirect, url_for, request, session
 from config import Config
 from forms import LoginForm, RegisterForm, CreateRecipeForm, EditRecipeForm, ConfirmDelete
-from flask_login import login_manager, login_required, logout_user
 from flask_pymongo import PyMongo, DESCENDING
 from bson.objectid import ObjectId
 import bcrypt
 import math
 import re
-import env
 import os
 import sys
+
 
 app = Flask(__name__)
 app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
@@ -18,15 +17,13 @@ app.config.from_object(Config)
 mongo = PyMongo(app)
 
 
-
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'test'}
-    print('hey', list( mongo.db.recipes.find()), file=sys.stdout, flush=True)
-    #r = list(i['title'] for i in mongo.db.recipes.find())
-    r = list(mongo.db.recipes.find())
-    return render_template('index.html', title="Home", user=user, r=r)
+    """Home page the gets four recipes from the DB that have been viewed the most"""
+    four_recipes = mongo.db.recipes.find().sort(
+        [('views', DESCENDING)]).limit(4)
+    return render_template('index.html', title="Home", recipes=four_recipes)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -150,7 +147,6 @@ def recipes():
     # number of recipes per page
     per_page = 1
     page = int(request.args.get('page', 1))
-
 
     # count total number of recipes
     total = mongo.db.recipes.count_documents({})
