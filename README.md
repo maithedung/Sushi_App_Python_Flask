@@ -38,7 +38,7 @@ This is accessed from the `Add Recipe` page as a button option, similar function
 A `logout` feature is available on the navbar and allows the logged in user to logout of their current session, which will create a redirect to the homepage. `Views`: Shows in incremental value the number of times a full recipe page is called.
 
 #### Features Left to Implement
-Have a `likes` button on each recipe. Charting data vizualization of `views` popularity via D3.JS. Follwers and to 'follow other users' functionality, plus a user avatar to add to the welome username once they have logged in.
+Have a `likes` button on each recipe. Charting data vizualization of `views` popularity via D3.JS. Follwers and to 'follow other users' functionality, plus a user avatar to add to the welcome username once they have logged in.
 
 ## Technologies Used
 * [Python 3.7](https://www.python.org/download/releases/3.0/) Language
@@ -97,10 +97,10 @@ This should see the app live at https://<whatever you called it>.herokuapp.com/
 
 **Spencer Bariball** tutor at Code Institute
 
-**Shalabh Aggarwal** Flask Framework Cookbook, 2e
+**Shalabh Aggarwal** Flask Framework Cookbook
 
 ## Images
-All images used in this application are copyright of their respective website owners, the links will take viewers to their respective sites, those being [Journey of Japan](https://journey-of-japan.com), [Tenkaichi](https://tenkaichi.com.sg) and [Seth Lui](https://sethlui.com).
+All images used in this application are copyright of their respective website owners, the links will take viewers to their respective sites, those being [Journey of Japan](https://journey-of-japan.com), [Tenkaichi](https://tenkaichi.com.sg), [Villagevoice](http://www.villagevoice.com/wp-content/uploads/2017/01/nyv_food_20161216_sugarfish_bhawks_008-1366x911.jpg) and [Seth Lui](https://sethlui.com).
 
 ## License
 This project is released under the [MIT licence](https://github.com/fion21/new-flask-1/blob/master/LICENSE).
