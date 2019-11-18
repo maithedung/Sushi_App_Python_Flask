@@ -64,7 +64,7 @@ The HTML, CSS code for this application has been checked via W3C Markup and repo
 Routes have been created in flask which bring in a template view on the front-end. Elements of which have been run in the browser and refactored to the final stage for deployment.
 
 #### Database Testing
-The database is set up in Mongodb is comprised of a list of recipe elements and also a user with page view increments. The most difficult aspect was getting familiar with the interface and finding the connection string. This took me a lot of time to understand and I eventually worked out how to set the os.environ to Mongodb so that the actual string is not displayed in the github repository. The connection string is put into the config vars on Heroku which is accessable to the owner of the site.
+The database is set up in Mongodb and is comprised of a list of recipe elements including the user's added recipes which have page view increments. The most difficult aspect was getting familiar with the interface and finding the connection string. This took me a lot of time to understand and I eventually worked out how to set the os.environ to Mongodb so that the actual string is not displayed in the github repository. The connection string was added to the config vars on Heroku which is accessible only to the owner of the site.
 
 ## Deployment
 Installing the project can be done via the following stages:
