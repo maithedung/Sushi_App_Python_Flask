@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
+<style>
+        body {
+            background-size: cover;
+            background-image: none; 
+        }
+
+    </style>
     <h1>Edit Recipe</h1>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
