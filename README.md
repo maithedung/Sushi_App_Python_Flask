@@ -8,7 +8,7 @@ The purpose of this project is for educational purposes and serves as the Milest
 The live project can be viewed on heroku at [link](https://sushi-sandwich.herokuapp.com) here.
 
 ## UX
-I wanted to develop a breathable app for anyone to store and retrieve sushi recipes. There is a login feature which is explained more in *CRUD Functionality*. **Layout design**: the site theme is based on the colour palette which includes an orange and some blues and greys. This was brought in from my main background image of red caviar on a blue-grey background. **Typography**: the font is is *orangered* which is the pre-determined html standard font colour. The font is a sans-serif as this is clear and funtional across mobile apps thoughout. 
+I wanted to develop a breathable app for anyone to store and retrieve sushi recipes. There is a login feature which is explained more in *CRUD Functionality*. **Layout design**: the site theme is based on the colour palette which includes an orange and some blues and greys. This was brought in from my main background image of red caviar on a blue-grey background. The image is not present on the create, edit, delete and single recipe (full page view) as it reads better on smaller screens that way. **Typography**: the font is is *orangered* which is the pre-determined html standard font colour, save on the pages without the background image where the pages are orangered and black. The font is a sans-serif as this is clear and funtional across mobile apps thoughout. 
 
 ## Wireframes
 [Desktop](https://github.com/fion21/new-flask-1/blob/master/planning/desktopviewindex.PNG) [Ipad](https://github.com/fion21/new-flask-1/blob/master/planning/tabletverticalviewindex.PNG) [Iphone6](https://github.com/fion21/new-flask-1/blob/master/planning/iphone6.PNG)
@@ -32,7 +32,7 @@ I used the code of *update one* in the `app.py` as part of the edit_recipe route
 
 ### DELETE 
 
-This is accessed from the `Add Recipe` page as a button option, similar functionality to the `update` button. If a user presses the delete button there is a flash message warning beforehand. The code is handled with `forms.py` Similar logic to that described for *update one*, here it is `recipes_db.delete_one({...etc` in`app.py`. On successful deletion the user is returned to the homepage.
+This is accessed from viewing a recipe that the author has created, (found by searching it in the search bar or finding it listed on the whole list of recipes it appears in order of insertion, usually this would be at the end of the list) and pressed more info on similar functionality to the `update` button. If a user presses the delete button there is a flash message warning beforehand. The code is handled with `forms.py` Similar logic to that described for *update one*, here it is `recipes_db.delete_one({...etc` in`app.py`. On successful deletion the user is returned to the homepage.
 
 #### Other Features
 A `logout` feature is available on the navbar and allows the logged in user to logout of their current session, which will create a redirect to the homepage. `Views`: Shows in incremental value the number of times a full recipe page is called.
