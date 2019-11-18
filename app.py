@@ -145,7 +145,7 @@ def search():
 def recipes():
     """Logic for recipe list and pagination"""
     # number of recipes per page
-    per_page = 1
+    per_page = 4
     page = int(request.args.get('page', 1))
 
     # count total number of recipes
