@@ -8,9 +8,10 @@ The purpose of this project is for educational purposes and serves as the Milest
 The live project can be viewed on heroku at [link](https://sushi-sandwich.herokuapp.com) here.
 
 ## UX
-I wanted to develop a breathable app for anyone to store and retrieve sushi recipes. There is a login feature which is explained more in *CRUD Functionality*. **Layout design**: the site theme is based on the [colour palette](https://github.com/fion21/new-flask-1/blob/master/planning/wireframes/color_scheme.PNG) which includes an orange and some blues and greys. This was brought in from my main background image of red caviar on a blue-grey background. The image is not present on the create, edit, delete and single recipe (full page view) as it reads better on smaller screens that way. **Typography**: the font is is *orangered* which is the pre-determined html standard font colour, save on the pages without the background image where the pages are orangered and black. The font is a sans-serif as this is clear and funtional across mobile apps thoughout. 
+I wanted to develop a breathable app for anyone to store and retrieve sushi recipes. There is a login feature which is explained more in *CRUD Functionality*. **Layout design**: the site theme is based on the [colour palette](https://github.com/fion21/new-flask-1/blob/master/planning/wireframes/color_scheme.PNG) which includes an orange and some blues and greys. This was brought in from my main background image of red caviar on a blue-grey background, which I subsequently left out as I wanted to concerntrate on readability over photography. The new screen is black background with orange text, which is much clearer. **Typography**: As to design I was following Swiss design principles from the 1960s, which sans-serif fonts were derived from, and necessary to use on the app to avoid pixelization from a serif font. The user has to see the words to navigate well. The image is not present on the create, edit, delete and single recipe (full page view) as it reads better on smaller screens that way. The font is is *orangered* which is the pre-determined html standard font colour.
 
 ## Wireframes
+The app works 100% on all phones and screens.
 [Desktop](https://github.com/fion21/new-flask-1/blob/master/planning/desktopviewindex.PNG) [Ipad](https://github.com/fion21/new-flask-1/blob/master/planning/tabletverticalviewindex.PNG) [Iphone6](https://github.com/fion21/new-flask-1/blob/master/planning/iphone6.PNG)
 
 
@@ -58,7 +59,7 @@ The UX fonts and card feature, plus the navbar and hamburger are all scalable, r
 The site follows responsive design and works for desktop viewing on browsers: google chrome, firefox and explorer as well as mobiles having checked the rending on the iPhone: from 5 to X, Samsung Galaxy: all versions, iPad: all versions, Google: Pixel 2 and 3.
 
 #### Coding Tests
-The HTML, CSS code for this application has been checked via W3C Markup and reported no significant errors. The Python code has been tested via working on the code in stages and running the app on the front-end. Some pep8 coding from VS code helped by providing the correct indentation, but on other times the jinja templating would stay on the same line, which was a hinderence. Back-end terminal testing and running were standard procedures throughout the app development.
+The HTML, CSS code for this application has been checked via W3C Markup and reported no significant errors. The Python code has been tested via working on the code in stages and running the app on the front-end. Some pep8 coding from VS code helped by providing the correct indentation, but on other times the jinja templating would stay on the same line, which was a hinderence. Back-end terminal testing and running were standard procedures throughout the app development. New tests have been added to test the back-end functionality.
 
 #### Testing Template Views
 Routes have been created in flask which bring in a template view on the front-end. Elements of which have been run in the browser and refactored to the final stage for deployment.
