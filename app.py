@@ -125,7 +125,7 @@ def search():
     orig_query = request.args['query']
     # using regular expression setting option for any case
     query = {'$regex': re.compile(
-        '.*{}.*'.format(orig_query)), '$options': 'i'}
+        '.*{}.*'.format(orig_query), re.IGNORECASE)}
     # find instances of the entered word in title, tags or ingredients
     results = mongo.db.recipes.find({
         '$or': [
@@ -137,7 +137,7 @@ def search():
             {'views': query},
             {'like': query},
         ]
-    })
+    })        
     return render_template('search.html', query=orig_query, results=results)
 
 
