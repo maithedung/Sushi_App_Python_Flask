@@ -109,3 +109,7 @@ This project is released under the [MIT licence](https://github.com/fion21/new-f
 ## Disclaimer
 The purpose of the project is for educational purposes only.
 
+If you found this code useful, there is a way to support me, this is a cool way to say thank you:
+
+<a href="https://www.buymeacoffee.com/fion34" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
