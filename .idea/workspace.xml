@@ -155,7 +155,7 @@
       <change beforePath="$PROJECT_DIR$/Lib/keyword.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib/linecache.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib/locale.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/no-global-site-packages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lib/no-global-site-packages.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib/ntpath.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib/operator.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib/orig-prefix.txt" beforeDir="false" />
@@ -2246,6 +2246,7 @@
       <updated>1665738030653</updated>
       <workItem from="1665738033259" duration="2484000" />
       <workItem from="1665798100797" duration="4339000" />
+      <workItem from="1665819740419" duration="116000" />
     </task>
     <servers />
   </component>
